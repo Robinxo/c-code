@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void printArray(int *A, int n) {
+void printArray(int* A, int n) {
     for (int i = 0; i < n; i++) {
         printf("%d ", A[i]);
     }
@@ -40,6 +40,7 @@ void quickSort(int A[], int low, int high) {
 
     if (low < high) {
         partitionIndex = partition(A, low, high);
+        printf("Partition index is %d\n", partitionIndex);
         quickSort(A, low, partitionIndex - 1);   // sort left subarray
         quickSort(A, partitionIndex + 1, high);  // sort right subarray
     }

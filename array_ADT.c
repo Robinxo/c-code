@@ -7,6 +7,12 @@ struct MyArray {
   int *ptr;
 };
 
+
+struct MySecondArray {
+    int double_size;
+    int used_size;
+};
+
 void createArray(struct MyArray *a, int t_Size, int u_Size) {
   a->total_size = t_Size;
   a->used_size = u_Size;
